@@ -1,6 +1,12 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+//Variáveis Globais
 const amigos = [];
 let errorMessage = "";
+const resultado = document.getElementById("resultado");
+
+
+
+//Funções
 
 const nameValid = (name) => {
   if(name.trim() === ""){
@@ -16,8 +22,9 @@ const nameValid = (name) => {
   return true;
 };
 
-function adicionarAmigo() {
+const adicionarAmigo = () => {
   const name = document.getElementById("amigo").value;
+  resultado.textContent = "";
   if (nameValid(name)) {
     amigos.push(name);
     document.getElementById("amigo").value = "";
@@ -35,4 +42,11 @@ const listarAmigos = () => {
     li.textContent = amigo;
     listaAmigos.appendChild(li);
   });
+};
+
+const sortearAmigo = () => {
+  if (amigos.length > 1) {
+    const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    resultado.textContent = amigoSorteado;
+  }
 };
