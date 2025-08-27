@@ -141,7 +141,7 @@ ul {
 
 .table-container {
   width: 100%;
-  max-width: 600px;  
+  max-width: 600px; 
   margin-top: 20px 0;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -163,10 +163,65 @@ ul {
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: var(--color-text) var(--color-quaternary);
+  width: 100%;
 }
 
-table td {
-  padding: 5px 10px;
+.table-wrapper td {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-wrapper th {
+  background-color: var(--color-quaternary);
+  font-weight: bold;
+  color: var(--color-text);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Coluna do nome - ocupa a maior parte do espaço */
+.col-nome {
+  width: 80%;
+}
+
+/* Coluna das ações - ocupa espaço mínimo necessário */
+.col-acoes {
+  width: 20%;
+  text-align: center;
+}
+
+/* Container para os botões de ação */
+.acoes-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Estilos para os ícones de ação */
+.acoes-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.acoes-container a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.acoes-container .editar {
+  color: var(--color-primary);
+}
+
+.acoes-container .deletar {
+  color: red;
 }
 
 .result-list {

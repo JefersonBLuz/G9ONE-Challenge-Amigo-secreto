@@ -21,11 +21,16 @@ const nameValid = (name) => {
     errorMessage = "Por favor, insira um nome.";
     return false;
   }
-  if (amigos.includes(name.trim())) {
+  if (amigos.includes(formataNome(name))) {
     errorMessage = "Nome já existe";
     return false;
   }
   return true;
+};
+
+const formataNome = (name) => {
+  const nameFormatted = name.trim().split(' ').map(palavra => palavra.charAt(0).toUpperCase() + palavra.slice(1).toLowerCase()).join(' ');
+  return nameFormatted;
 };
 
 //Função para adicionar o amigo na lista
@@ -33,7 +38,7 @@ const adicionarAmigo = () => {
   const name = document.getElementById("amigo").value;
   limparDados();
   if (nameValid(name)) {
-    amigos.push(name);
+    amigos.push(formataNome(name));
     document.getElementById("amigo").value = "";
     listarAmigos();
     return;
@@ -49,12 +54,16 @@ const listarAmigos = () => {
   amigossorted.forEach((amigo, index) => {
     listaAmigos.innerHTML += `
       <tr>
-        <td>${amigo}</td>
-        <td>
-          <a href="#" onclick="editarAmigo(${index})" style="text-decoration: none; color: var(--color-primary);"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></a>
-        </td>
-        <td>
-          <a href="#" onclick="deletarAmigo(${index})" style="text-decoration: none; color: red;"><iconify-icon icon="mdi:trash-can-outline"></iconify-icon></a>
+        <td class="col-nome">${index + 1} - ${amigo}</td>
+        <td class="col-acoes">
+          <div class="acoes-container">
+            <a href="#" onclick="editarAmigo(${index})" class="editar" title="Editar">
+              <iconify-icon icon="mdi:pencil-outline"></iconify-icon>
+            </a>
+            <a href="#" onclick="deletarAmigo(${index})" class="deletar" title="Deletar">
+              <iconify-icon icon="mdi:trash-can-outline"></iconify-icon>
+            </a>
+          </div>
         </td>
       </tr>
     `;
