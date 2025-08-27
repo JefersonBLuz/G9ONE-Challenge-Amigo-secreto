@@ -45,10 +45,17 @@ const adicionarAmigo = () => {
 const listarAmigos = () => {
   const listaAmigos = document.getElementById("listaAmigos");
   listaAmigos.innerHTML = "";
-  amigos.forEach((amigo, index) => {
+  const amigossorted = amigos.sort();
+  amigossorted.forEach((amigo, index) => {
     listaAmigos.innerHTML += `
       <tr>
         <td>${amigo}</td>
+        <td>
+          <a href="#" onclick="editarAmigo(${index})" style="text-decoration: none; color: var(--color-primary);"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></a>
+        </td>
+        <td>
+          <a href="#" onclick="deletarAmigo(${index})" style="text-decoration: none; color: red;"><iconify-icon icon="mdi:trash-can-outline"></iconify-icon></a>
+        </td>
       </tr>
     `;
   });
@@ -88,4 +95,44 @@ const desabilitarBotaoSortear = () => {
   } else {
     buttonSortear.disabled = false;
   }
+};
+
+const editarAmigo = (index) => {
+  const amigo = amigos[index];
+  const listaAmigosElement = document.getElementById("listaAmigos");
+  const filhos = listaAmigosElement.children;
+  const tdNome = filhos[index].children[0];
+  const input = document.createElement("input");
+  input.type = "text";
+  input.value = amigo;
+  input.className = "input-name";
+  tdNome.textContent = "";
+  tdNome.appendChild(input);
+  input.focus();
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      const novoNome = input.value.trim();
+      if (nameValid(novoNome)) {
+        amigos[index] = novoNome;
+        limparDados();
+        listarAmigos();
+      } else {
+        errorMessage = "Não foi possível editar o nome. "+ errorMessage;
+        errorMessageElement.textContent = errorMessage;
+      }
+    } else if (event.key === "Escape") {
+      listarAmigos();
+    }
+  });
+
+  input.addEventListener("blur", () => {
+    listarAmigos();
+  });
+};
+
+const deletarAmigo = (index) => {
+  limparDados();
+  amigos.splice(index, 1);
+  listarAmigos();
 };
