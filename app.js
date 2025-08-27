@@ -45,10 +45,12 @@ const adicionarAmigo = () => {
 const listarAmigos = () => {
   const listaAmigos = document.getElementById("listaAmigos");
   listaAmigos.innerHTML = "";
-  amigos.forEach((amigo) => {
-    const li = document.createElement("li");
-    li.textContent = amigo;
-    listaAmigos.appendChild(li);
+  amigos.forEach((amigo, index) => {
+    listaAmigos.innerHTML += `
+      <tr>
+        <td>${amigo}</td>
+      </tr>
+    `;
   });
 };
 
@@ -76,6 +78,11 @@ const limparLista = () => {
 //Função para desabilitar o botão de sortear
 const desabilitarBotaoSortear = () => {
   const buttonSortear = document.querySelector(".button-draw");
+  if (amigos.length !== 0) {
+    document.getElementById("table-container").classList.add("table-border");
+  }else{
+    document.getElementById("table-container").classList.remove("table-border");
+  }
   if (amigos.length < 2) {
     buttonSortear.disabled = true;
   } else {

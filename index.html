@@ -28,7 +28,13 @@
         <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
       </div>
       <h3 id="error-message" class="error-message"></h3>
-      <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+      <div id="table-container" class="table-container">
+      <table class="table-wrapper">
+        <tbody id="listaAmigos" aria-labelledby="listaAmigos" role="list">
+          <!-- As linhas dos amigos serão inseridas dinamicamente via JavaScript -->
+        </tbody>
+      </table>
+      </div>
       <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
       <div class="button-container">

@@ -2,6 +2,7 @@
   --color-primary: #4B69FD;
   --color-secondary: #FFF9EB;
   --color-tertiary: #C4C4C4;
+  --color-quaternary: #FFF9C4;
   --color-button: #fe652b;
   --color-button-hover: #e55720;
   --color-text: #444444;
@@ -136,6 +137,36 @@ ul {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   margin: 20px 0;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 600px;  
+  margin-top: 20px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: var(--color-text);
+  background-color: var(--color-quaternary);
+}
+
+.table-border {
+  padding: 20px 0px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+
+.table-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+  display: block;
+  background: none;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text) var(--color-quaternary);
+}
+
+table td {
+  padding: 5px 10px;
 }
 
 .result-list {
