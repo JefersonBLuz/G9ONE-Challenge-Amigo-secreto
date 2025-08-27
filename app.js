@@ -57,3 +57,9 @@ const limparDados = () => {
   errorMessageElement.textContent = "";
   resultado.textContent = "";
 };
+
+const limparLista = () => {
+  amigos.length = 0;
+  listarAmigos();
+  limparDados();
+};
