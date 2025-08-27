@@ -9,8 +9,8 @@
 <!-- Badges -->
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue.svg"/></a>
-  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v1.1.0">
-    <img src="https://img.shields.io/badge/Versão-1.1.0-orange.svg" alt="Versão 1.1.0"/>
+  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v1.2.0">
+    <img src="https://img.shields.io/badge/Versão-1.2.0-orange.svg" alt="Versão 1.2.0"/>
   </a>
   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"/>
 </p>
@@ -51,7 +51,11 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 - **Mensagens de erro integradas** no HTML (sem popups)
 - **Botão de sortear inteligente** (desabilitado para lista ≤ 1)
 - **Botão de reiniciar** para limpar toda a lista
-- **Tooltip informativo** no botão desabilitado<br>
+- **Tooltip informativo** no botão desabilitado
+- **Tabela com scroll** para gerenciar muitos nomes
+- **Edição e exclusão** de nomes com ícones
+- **Formatação automática** de nomes (capitalização)
+- **Lista ordenada** alfabeticamente<br>
 <!-- <sub>*(Imagens e demonstrações da aplicação podem ser adicionadas posteriormente)*</sub> -->
 
 ---
@@ -76,6 +80,8 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+- ![Iconify](https://img.shields.io/badge/Iconify-1769AA?logo=iconify&logoColor=white)
+- ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-339AF0?logo=fontawesome&logoColor=white)
 
 ---
 
@@ -83,6 +89,7 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 
 | Versão | Descrição | Data | Funcionalidades |
 |--------|-----------|------|-----------------|
+| **v1.2.0** | 🚀 Funcionalidades Avançadas | 2025-01-27 | • Tabela com scroll<br>• Edição e exclusão de nomes<br>• Ícones modernos<br>• Formatação automática<br>• Lista ordenada |
 | **v1.1.0** | ✨ Melhorias de UX | 2025-08-27 | • Mensagens de erro no HTML<br>• Botão sortear inteligente<br>• Botão de reiniciar<br>• Tooltip informativo<br>• Footer com créditos |
 | **v1.0.0** | 🎯 Versão Base | 2025-08-26 | • Funcionalidades básicas<br>• Validações de entrada<br>• Sorteio aleatório<br>• Interface responsiva<br>• README completo |
 
