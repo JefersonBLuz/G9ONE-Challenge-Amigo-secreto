@@ -142,7 +142,7 @@ ul {
 
 .table-container {
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
   margin-top: 20px 0;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -234,7 +234,8 @@ ul {
 }
 
 /* Botão de sortear título */
-.button-draw, .button-clear {
+.button-draw,
+.button-clear {
   display: flex;
   align-items: center;
   width: 300px;
@@ -251,7 +252,8 @@ ul {
   background-color: var(--color-primary);
 }
 
-.button-draw img, .button-clear img {
+.button-draw img,
+.button-clear img {
   margin-right: 40px;
 }
 
@@ -291,7 +293,7 @@ ul {
   font-size: 15px;
   white-space: nowrap;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 footer {
@@ -299,4 +301,63 @@ footer {
   margin-top: auto;
   text-align: center;
   margin-bottom: 5px;
+}
+
+/* ===== RESPONSIVIDADE SIMPLES ===== */
+
+/* Mobile (até 767px) */
+@media screen and (max-width: 767px) {
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-draw,
+  .button-clear {
+    width: 100%;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .input-name {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .table-wrapper td {
+    font-size: 14px;
+  }
+
+  .result-list {
+    font-size: 18px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+
+  .header-banner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-banner img {
+    width: 240px;
+    height: auto;
+  }
+
+  .input-section {
+    flex: 1;
+    min-height: calc(100vh - 150px);
+  }
 }
