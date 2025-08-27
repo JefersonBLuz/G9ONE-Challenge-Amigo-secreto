@@ -121,7 +121,7 @@ const editarAmigo = (index) => {
     if (event.key === "Enter") {
       const novoNome = input.value.trim();
       if (nameValid(novoNome)) {
-        amigos[index] = novoNome;
+        amigos[index] = formataNome(novoNome);
         limparDados();
         listarAmigos();
       } else {
