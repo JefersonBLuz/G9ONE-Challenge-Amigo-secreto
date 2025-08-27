@@ -188,6 +188,23 @@ ul {
 .button-draw:disabled {
   opacity: 0.5;
   cursor: default;
+  position: relative;
+}
+
+.button-draw:disabled:hover::after {
+  content: "Precisa ter mais de 1 nome para sortear.";
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 footer {
