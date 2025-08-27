@@ -2,7 +2,9 @@
 //Variáveis Globais
 const amigos = [];
 let errorMessage = "";
+const errorMessageElement = document.getElementById("error-message");
 const resultado = document.getElementById("resultado");
+
 
 
 
@@ -24,14 +26,14 @@ const nameValid = (name) => {
 
 const adicionarAmigo = () => {
   const name = document.getElementById("amigo").value;
-  resultado.textContent = "";
+  limparDados();
   if (nameValid(name)) {
     amigos.push(name);
     document.getElementById("amigo").value = "";
     listarAmigos();
     return;
   }
-  alert(errorMessage);
+  errorMessageElement.textContent = errorMessage;
 };
 
 const listarAmigos = () => {
@@ -49,4 +51,9 @@ const sortearAmigo = () => {
     const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
     resultado.textContent = amigoSorteado;
   }
+};
+
+const limparDados = () => {
+  errorMessageElement.textContent = "";
+  resultado.textContent = "";
 };

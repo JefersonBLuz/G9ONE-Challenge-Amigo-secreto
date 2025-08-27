@@ -162,11 +162,12 @@ ul {
 }
  
 .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-    text-align: center;
-    font-weight: bold;
+  color: red;
+  font-family: "Inter", serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .button-draw:disabled {
