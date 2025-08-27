@@ -72,10 +72,8 @@ const listarAmigos = () => {
 
 //Função para sortear o amigo secreto
 const sortearAmigo = () => {
-  if (amigos.length > 1) {
     const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
-    resultado.textContent = amigoSorteado;
-  }
+    resultado.innerHTML = `✨<span style="color: #000;">O nome do amigo secreto é:</span> ${amigoSorteado}!✨`;
 };
 
 //Função para limpar os dados da lista

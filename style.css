@@ -94,7 +94,8 @@ body {
   justify-content: center;
   gap: 10px;
   max-width: 600px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -226,7 +227,7 @@ ul {
 
 .result-list {
   margin-top: 15px;
-  color: #05DF05;
+  color: var(--color-button);
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -294,6 +295,7 @@ ul {
 }
 
 footer {
+  font-family: "Inter", sans-serif;
   margin-top: auto;
   text-align: center;
   margin-bottom: 5px;
