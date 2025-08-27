@@ -4,15 +4,15 @@
 
 ### Desafio G9ONE - Sistema de Sorteio de Amigo Secreto
 
-<img src="https://github.com/user-attachments/assets/33fe6b23-91af-4b62-96c4-773000a94f1a" alt="Imagem do sistema Amigo Secreto" width="700"/>
+<img src="https://github.com/user-attachments/assets/916a9c44-9287-438a-b83b-5cf2a7b83fd4" alt="Imagem do sistema Amigo Secreto" width="700"/>
 
 <!-- Badges -->
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue.svg"/></a>
-  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v1.2.0">
-    <img src="https://img.shields.io/badge/Versão-1.2.0-orange.svg" alt="Versão 1.2.0"/>
+  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v2.0.0">
+    <img src="https://img.shields.io/badge/Versão-2.0.0-orange.svg" alt="Versão 2.0.0"/>
   </a>
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-green"/>
 </p>
 </div>
 
@@ -55,7 +55,11 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 - **Tabela com scroll** para gerenciar muitos nomes
 - **Edição e exclusão** de nomes com ícones
 - **Formatação automática** de nomes (capitalização)
-- **Lista ordenada** alfabeticamente<br>
+- **Lista ordenada** alfabeticamente
+- **Responsividade completa** para desktop, tablet e mobile
+- **Layout adaptativo** com componentes em coluna no mobile
+- **Imagens proporcionais** mantendo aspect ratio
+- **Fontes otimizadas** para diferentes tamanhos de tela<br>
 <!-- <sub>*(Imagens e demonstrações da aplicação podem ser adicionadas posteriormente)*</sub> -->
 
 ---
@@ -89,6 +93,7 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 
 | Versão | Descrição | Data | Funcionalidades |
 |--------|-----------|------|-----------------|
+| **v2.0.0** | 📱 Responsividade Completa | 2025-01-27 | • Responsividade para desktop/tablet/mobile<br>• Layout em coluna no mobile<br>• Imagens proporcionais<br>• Fontes otimizadas<br>• Melhorias de width |
 | **v1.2.0** | 🚀 Funcionalidades Avançadas | 2025-01-27 | • Tabela com scroll<br>• Edição e exclusão de nomes<br>• Ícones modernos<br>• Formatação automática<br>• Lista ordenada |
 | **v1.1.0** | ✨ Melhorias de UX | 2025-08-27 | • Mensagens de erro no HTML<br>• Botão sortear inteligente<br>• Botão de reiniciar<br>• Tooltip informativo<br>• Footer com créditos |
 | **v1.0.0** | 🎯 Versão Base | 2025-08-26 | • Funcionalidades básicas<br>• Validações de entrada<br>• Sorteio aleatório<br>• Interface responsiva<br>• README completo |
