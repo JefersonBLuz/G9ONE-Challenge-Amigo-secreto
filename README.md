@@ -9,8 +9,8 @@
 <!-- Badges -->
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue.svg"/></a>
-  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v1.0.0">
-    <img src="https://img.shields.io/badge/Versão-1.0.0-orange.svg" alt="Versão 1.0.0"/>
+  <a href="https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto/releases/tag/v1.1.0">
+    <img src="https://img.shields.io/badge/Versão-1.1.0-orange.svg" alt="Versão 1.1.0"/>
   </a>
   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"/>
 </p>
@@ -24,6 +24,7 @@
 - [Funcionalidades e Demonstração](#funcionalidades-e-demonstração)
 - [Acesso ao Projeto](#acesso-ao-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Histórico de Versões](#histórico-de-versões)
 - [Autor](#autor)
 - [Licença](#licença)
 
@@ -46,7 +47,11 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
   - Não permite nomes duplicados na lista
 - **Sorteio automático e aleatório** de amigo secreto
 - **Interface simples e intuitiva** com feedback visual
-- **Validações em tempo real** para garantir a integridade dos dados<br>
+- **Validações em tempo real** para garantir a integridade dos dados
+- **Mensagens de erro integradas** no HTML (sem popups)
+- **Botão de sortear inteligente** (desabilitado para lista ≤ 1)
+- **Botão de reiniciar** para limpar toda a lista
+- **Tooltip informativo** no botão desabilitado<br>
 <!-- <sub>*(Imagens e demonstrações da aplicação podem ser adicionadas posteriormente)*</sub> -->
 
 ---
@@ -71,6 +76,15 @@ Se você também tem interesse em desenvolver suas habilidades em programação,
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+---
+
+## 📋 Histórico de Versões
+
+| Versão | Descrição | Data | Funcionalidades |
+|--------|-----------|------|-----------------|
+| **v1.1.0** | ✨ Melhorias de UX | 2025-08-27 | • Mensagens de erro no HTML<br>• Botão sortear inteligente<br>• Botão de reiniciar<br>• Tooltip informativo<br>• Footer com créditos |
+| **v1.0.0** | 🎯 Versão Base | 2025-08-26 | • Funcionalidades básicas<br>• Validações de entrada<br>• Sorteio aleatório<br>• Interface responsiva<br>• README completo |
 
 ---
 
